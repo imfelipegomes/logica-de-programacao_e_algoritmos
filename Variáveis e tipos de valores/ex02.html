@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 02 - tipos de valores</title>
+</head>
+<body>
+    <h1>Segundo exemplo</h1>
+
+    <script>
+        let numero1 = prompt('Digite um número')
+        numero1 = parseFloat(numero1)
+
+        let numero2 = prompt('Digite outro número')
+        numero2 = parseFloat(numero2)
+
+        alert("A soma é: " + (numero1 + numero2))
+        
+        // Como não está entre aspas, ele não considera uma string, fazendo com que realmente faça uma soma, ou seja, realmente leva em consideração o operador aritmético
+
+        // Se não adicionarmos entre outros () nossa operação aritmetica e tiver uma string, o JavaScript vai entender que o resto também é string, fazendo com que não considere a operação aritmética, por isso, colocamos as 2 variáveis dentro de outros () OU crio uma outra variável let let soma = numero1 + numero2 e coloco alert('A soma é: ' + soma)
+
+        // Com o parseFloat() conseguimos executar números decimais. Ele converteu a nossa string (texto) em número decimal, ele analisa a string da esquerda para a direita.
+
+        // Lembre-se que o + é utilizado para concatenar, ou seja, ele uni e combina strings
+    </script>
+</body>
+</html>

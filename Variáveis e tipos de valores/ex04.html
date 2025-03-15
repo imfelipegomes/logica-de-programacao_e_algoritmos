@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 04 - Mostrar a média</title>
+</head>
+<body>
+    <h1>Mostrar a média</h1>
+
+    <script>
+        //Esta é outra forma de fazer o que fiz nos ex anteriores, a chamada da string + a conversão para número em um só comando
+
+        //pedir para o usuário digitar 2 números
+        let n1 = parseFloat(prompt('Digite um número'))
+        // Uma lógica para me recordar é que, tudo que está a direita da operação de atribuição, no caso o sinal de =, será "guardado" dentro variável anterior a ele, que neste caso é n1, mas só depois de executado
+
+        let n2 = parseFloat(prompt('Digite outro número'))
+
+        //calcular a média
+        let media = (n1 + n2) / 2
+        // os () parenteses, no caso é um operador que faz com que a ação seja efetuada antes de qualquer outra que esteja com ele, neste caso, entre () a operação aritmética + foi efetuada antes da divisão / porque estava entre ()
+
+        //mostrar a média na tela
+        alert('A média é ' + media)
+    </script>
+</body>
+</html>

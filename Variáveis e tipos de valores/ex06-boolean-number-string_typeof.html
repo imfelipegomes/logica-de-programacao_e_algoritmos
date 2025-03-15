@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean, Number e String - typeof</title>
+</head>
+<body>
+    <h1>Boolean, Number e String - typeof</h1>
+
+    <script>
+        let mensagem = "Olá eu sou uma 'msg de texto'"
+        console.log(mensagem)
+
+        console.log(typeof 0) //Este tipo é number
+        console.log(typeof "0") //Este tipo é string
+        console.log(typeof String(0)) //Este tipo é string também
+
+        let isValid = true
+        console.log(typeof isValid)
+
+        console.log(Boolean("")) //Qualquer valor convertido para Boolean é true, exceto:
+        //Valores false: 0, string vazia, undefined, null, NaN... qualquer outro valor é true
+
+        //Exemplos:
+        console.log(Boolean("0")) //true
+        console.log(Boolean(0)) //false
+        console.log(Boolean("undefined")) //false
+        console.log(Boolean("null")) //false
+        console.log(Boolean("")) //false
+        console.log(Boolean(NaN)) //false
+
+        let naoDeclarado
+        console.log(naoDeclarado)  //Em console.log no browser, ficou como undefined e o que é o valor undefined? É um valor sem definição, que não foi definido, o null é similar, a diferença é que no null eu criei propositalmente uma variável sem valor
+
+        naoDeclarado = 0
+        console.log(naoDeclarado)
+
+        let n = parseFloat("a")
+        console.log(n)
+        console.log(typeof n)
+        console.log("-----") //-----
+        console.log(typeof undefined) //undefined
+        console.log(typeof null) //No console.log aparece object, mas isso é um erro de implementação do JavaScript
+        console.log(typeof 0) //number
+        console.log(typeof "") //string
+        console.log(typeof true) //boolean
+
+        console.log(typeof ((10).toString()))
+    </script>
+</body>
+</html>

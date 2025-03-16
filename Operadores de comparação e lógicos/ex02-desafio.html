@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 02 - Desafio</title>
+</head>
+<body>
+    <h1>Ex 02 - Desafio</h1>
+
+    <script>
+        //Aqui é a mensagem que aparecerá ao usuário para colocar um valor
+        let n1 = parseFloat(prompt("Digite um número entre 0 a 10"))
+        let n2 = parseFloat(prompt("Digite outro número entre 0 e 10"))
+
+        //Calculando a media, bem simples, basta concatenarmos as 2 variáveis e colocar o operador matemático + / * - % ... e o número no qual queremos somar, subtrair, multiplicar ou dividir
+        let media = (n1 + n2) / 2
+
+        //Aqui aparecerá o resultado ao usuário após os valores adicionados por ele anteriormente. Neste caso, basta executar o alert , concatenar e adicionar variavel de media aritmetica que criamos mais o operador de comparação, que neste caso foi o > (maior)
+        alert("A média é maior que 7? " + (media > 7))
+    </script>
+</body>
+</html>
